@@ -49,4 +49,4 @@ api.add_resource(EmojicodeResouce, '/emojicode/<string:emojicode>')
 api.add_resource(EmojicodeAliasResouce, '/alias/<string:alias>')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host='127.0.0.1', port=8443)
