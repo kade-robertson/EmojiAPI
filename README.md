@@ -1,2 +1,3 @@
-# emoji-api
+# EmojiAPI
+
 An utterly useless Emoji API service.
