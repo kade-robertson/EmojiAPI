@@ -17,9 +17,9 @@ A better question -- why not? All of those per-language libraries are such a pai
 All response bodies have the same structure:
 ```
 {
-    'emojiUnicode': '',
-    'emojiCode': '',
-    'emojiCodeAlias': ''
+    emojiUnicode: "😏",
+    emojiCode: ":smirking_face:",
+    emojiCodeAlias: ":smirk:"
 }
 ```
 
