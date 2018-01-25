@@ -1,5 +1,5 @@
 import emoji
-from flask import Flask, current_app
+from flask import Flask, redirect
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
