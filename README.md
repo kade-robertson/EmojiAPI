@@ -15,7 +15,7 @@ A better question -- why not? All of those per-language libraries are such a pai
 - `/alias/:alias`: provide a valid emoji code alias, and the appropriate Unicode emoji and emoji code will be returned, if available.
 
 All response bodies have the same structure:
-```
+```json
 {
     emojiUnicode: "😏",
     emojiCode: ":smirking_face:",
