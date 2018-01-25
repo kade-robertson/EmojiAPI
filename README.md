@@ -1,6 +1,7 @@
 # EmojiAPI :exclamation:
 
 An utterly useless Emoji API, built on REST principles. :boom:
+
 A demo is available at https://emojis.trade/ for your convenience.
 
 ### Why? :question:
@@ -9,12 +10,12 @@ A better question -- why not? All of those per-language libraries are such a pai
 
 ### Usage :information_source:
 
-`/unicode/:emoji` - Provide a Unicode emoji, and the appropriate emoji code and alias will be returned, if available.
-`/emojicode/:code` - Provide a valid emoji code, and the appropriate Unicode emoji and alias will be returned, if available.
-`/alias/:alias` - provide a valid emoji code alias, and the appropriate Unicode emoji and emoji code will be returned, if available.
+- `/unicode/:emoji`: Provide a Unicode emoji, and the appropriate emoji code and alias will be returned, if available.
+- `/emojicode/:code`: Provide a valid emoji code, and the appropriate Unicode emoji and alias will be returned, if available.
+- `/alias/:alias`: provide a valid emoji code alias, and the appropriate Unicode emoji and emoji code will be returned, if available.
 
 All response bodies have the same structure:
-```json
+```
 {
     'emojiUnicode': '',
     'emojiCode': '',
@@ -33,4 +34,4 @@ Any of these values can also be `null` if no corresponding data exists.
 
 ### Footnote
 
-This is not me
+*This is not meant to be taken seriously, this was just my first project doing anything web-development-ish in Python.*
