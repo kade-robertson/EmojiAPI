@@ -1,5 +1,5 @@
 import emoji
-from flask import Flask
+from flask import Flask, current_app
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
@@ -44,9 +44,13 @@ class EmojicodeAliasResouce(Resource):
             infodict['emojiCode'] = emoji.UNICODE_EMOJI[infodict['emojiUnicode']]
         return infodict
 
+@app.route('/')
+def index():
+    return current_app.send_static_file('index.html')
+
 api.add_resource(UnicodeResource, '/unicode/<string:unicode_val>')
 api.add_resource(EmojicodeResouce, '/emojicode/<string:emojicode>')
 api.add_resource(EmojicodeAliasResouce, '/alias/<string:alias>')
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8443)
+    app.run(host='127.0.0.1', port=5000)
