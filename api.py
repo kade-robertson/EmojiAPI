@@ -46,7 +46,7 @@ class EmojicodeAliasResouce(Resource):
 
 @app.route('/')
 def index():
-    return current_app.send_static_file('index.html')
+    return redirect("https://github.com/kade-robertson/EmojiAPI", code=302)
 
 api.add_resource(UnicodeResource, '/unicode/<string:unicode_val>')
 api.add_resource(EmojicodeResouce, '/emojicode/<string:emojicode>')
