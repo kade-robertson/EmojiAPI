@@ -25,6 +25,47 @@ All response bodies have the same structure:
 
 Any of these values can also be `null` if no corresponding data exists.
 
+### Examples :speech_balloon:
+
+[`https://emojis.trade/unicode/💩`](https://emojis.trade/unicode/💩) returns
+
+```json
+{
+    emojiCode: ":pile_of_poo:",
+    emojiCodeAlias: ":poop:",
+    emojiUnicode: "💩"
+}
+```
+
+[`https://emojis.trade/emojicode/:water_wave:`](https://emojis.trade/emojicode/:water_wave:) returns
+
+```json
+{
+    emojiCode: ":water_wave:",
+    emojiCodeAlias: ":ocean:",
+    emojiUnicode: "🌊"
+}
+```
+
+[`https://emojis.trade/alias/:thumbsup:`](https://emojis.trade/alias/:thumbsup:) returns
+
+```json
+{
+    emojiCode: ":thumbs_up:",
+    emojiCodeAlias: ":thumbsup:",
+    emojiUnicode: "👍"
+}
+```
+[`https://emojis.trade/emojicode/:notreal:`](https://emojis.trade/emojicode/:notreal:) returns
+
+```json
+{
+    emojiCode: ":notreal:",
+    emojiCodeAlias: null,
+    emojiUnicode: null
+}
+```
+
 ### Setting this up :information_source:
 
 1. Clone this repository.
